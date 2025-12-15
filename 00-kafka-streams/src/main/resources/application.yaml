@@ -1,0 +1,3 @@
+spring:
+  application:
+    name: 00-kafka-streams
