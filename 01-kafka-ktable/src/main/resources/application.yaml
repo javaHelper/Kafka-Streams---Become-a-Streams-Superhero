@@ -1,0 +1,3 @@
+spring:
+  application:
+    name: 01-kafka-ktable
