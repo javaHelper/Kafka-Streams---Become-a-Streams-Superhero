@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: word-count
+  kafka:
+    bootstrap-servers: localhost:9092
+    streams:
+      application-id: word-count-stream-app
+      properties:
+        commit.interval.ms: 1000
+      default:
+        key-serde: org.apache.kafka.common.serialization.Serdes$StringSerde
+        value-serde: org.apache.kafka.common.serialization.Serdes$StringSerde
+
+input-topic: words-input
+output-topic: words-output
+
